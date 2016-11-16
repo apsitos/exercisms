@@ -4,21 +4,16 @@ var Bob = function() {};
 
 
 Bob.prototype.hey = function(statement) {
-  onlyInteger(statement);
   if (statement === statement.toUpperCase()) {
-    return 'Whoa, chill out!'
+    return 'Whoa, chill out!';
+  } else if (parseInt(statement) && isNaN(statement)) {
+    return 'Whatever.';
   } else if (statement.includes('?')) {
     return 'Sure.';
   } else {
     return 'Whatever.';
-  }
-
-function onlyInteger(statement) {
-  if (parseInt(statement) && !Number.isNaN(statement)) {
-    return 'Whatever.';
   };
-}
-  
+
 }
 
 module.exports = Bob;
