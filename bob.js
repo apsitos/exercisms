@@ -14,9 +14,11 @@ Bob.prototype.hey = function(statement) {
   }
 
 function onlyInteger() {
-  for (i = 0; i < statement.length; i++) {
-    
-  }
+  // for (i = 0; i > statement.length; i++);
+  if (parseInt(statement) && isNan(statement)) {
+    return 'Whatever.';
+  };
+}
 
 }
 
