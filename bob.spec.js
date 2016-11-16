@@ -39,7 +39,7 @@ describe('Bob', function() {
   });
 
   it('only numbers', function() {
-    var result = bob.hey('1, 2, 3');
+    var result = bob.hey('1 2 3');
     expect(result).toEqual('Whatever.');
   });
 
