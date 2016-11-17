@@ -4,10 +4,10 @@ var Bob = function() {};
 
 
 Bob.prototype.hey = function(statement) {
-  if (statement === statement.toUpperCase()) {
-    return 'Whoa, chill out!';
-  } else if (parseInt(statement) && isNaN(statement)) {
+  if (parseInt(statement) && isNaN(statement)) {
     return 'Whatever.';
+  } else if (statement === statement.toUpperCase()) {
+    return 'Whoa, chill out!';
   } else if (statement.includes('?')) {
     return 'Sure.';
   } else {
@@ -17,6 +17,7 @@ Bob.prototype.hey = function(statement) {
 }
 
 module.exports = Bob;
+
 
 
 
