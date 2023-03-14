@@ -10,7 +10,7 @@
  * @returns {boolean} whether a license is required
  */
 export function needsLicense(kind) {
-  return kind === 'car' || kind === 'truck';
+  return kind === "car" || kind === "truck";
 }
 /**
  * Helps choosing between two options by recommending the one that
@@ -21,13 +21,13 @@ export function needsLicense(kind) {
  * @returns {string} a sentence of advice which option to choose
  */
 export function chooseVehicle(option1, option2) {
-  let choice = ''
+  let choice = "";
   if (option1 < option2) {
-    choice = option1
+    choice = option1;
   } else {
-    choice = option2
+    choice = option2;
   }
-  return `${choice} is clearly the better choice.`
+  return `${choice} is clearly the better choice.`;
 }
 /**
  * Calculates an estimate for the price of a used vehicle in the dealership
@@ -38,13 +38,13 @@ export function chooseVehicle(option1, option2) {
  * @returns {number} expected resell price in the dealership
  */
 export function calculateResellPrice(originalPrice, age) {
-  let discount = '';
+  let discount;
   if (age < 3) {
-    discount = .80;
+    discount = 0.8;
   } else if (age > 10) {
-    discount = .50
+    discount = 0.5;
   } else {
-    discount = .70
+    discount = 0.7;
   }
-  return originalPrice * discount
+  return originalPrice * discount;
 }
