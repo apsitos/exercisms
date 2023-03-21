@@ -65,3 +65,7 @@ export function getFirstOddCard(stack) {
 export function getFirstEvenCardPosition(stack) {
   return stack.findIndex((card) => card % 2 === 0);
 }
+
+/* Our JavaScript Analyzer has some comments on your solution which may be useful for you:
+🎉 That is an exemplar solution. Congratulations. It is exactly what we think is the most idiomatic implementation of the tasks at hand. Rejoice! 
+*/
