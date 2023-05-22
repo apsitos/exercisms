@@ -13,3 +13,20 @@ export class Matrix {
     return this.rows[0].map((col, i) => this.rows.map((row) => row[i]));
   }
 }
+
+/*
+ * Accepts an input string and validates whether the string
+ * has only unique characters, not repeated in the string.
+ * Return true if no duplicate characters exist, otherwise false.
+ */
+/*
+function uniqueChar(str) {
+  let obj = {};
+  const arr = str.split('')
+}
+   
+console.log(uniqueChar('abcd')); // true
+   
+console.log(uniqueChar('abcccd')); // false
+
+*/
